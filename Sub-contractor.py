@@ -37,7 +37,7 @@ system = wait.until(
     EC.element_to_be_clickable((By.XPATH, "//ul[@id='side-menu']/li[4]/a"))
 )
 system.click()
-
+# i test git push
 #Production configuration
 wait = WebDriverWait(driver, 20, poll_frequency=2, ignored_exceptions=[NoSuchElementException])
 pc = wait.until(
@@ -53,10 +53,10 @@ operation = wait.until(
 operation.click()
 
 #subcontractor process
-sub = wait.until(
+'''sub = wait.until(
     EC.element_to_be_clickable((By.XPATH, "//a[normalize-space()='Sub-Contractor Process']"))
 )
-sub.click()
+sub.click()'''
 
 #Create
 wait = WebDriverWait(driver, 20, poll_frequency=2, ignored_exceptions=[NoSuchElementException])
